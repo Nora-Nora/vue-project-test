@@ -25,7 +25,7 @@ module.exports = {
         { value: "refactor", name: "♻️（重构）refactor", emoji: ":recycle:" },
         { value: "other", name: "📝 （其他）other changes ", emoji: ":rewind:" },
     ],
-    useEmoji: true,
+    // useEmoji: true,
     emojiAlign: "center",
     themeColorCode: "",
     scopes: [
