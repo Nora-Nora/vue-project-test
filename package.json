@@ -2,9 +2,16 @@
   "name": "geek-admin",
   "version": "0.0.0",
   "scripts": {
+    "commit": "git cz",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git",
+      "czConfig": "./cz.config.js"
+    }
   },
   "dependencies": {
     "axios": "^0.24.0",
