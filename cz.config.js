@@ -38,7 +38,7 @@ module.exports = {
         { value: 'Gadgets', name: 'Gadgets' },
         { value: 'FVM', name: '版本管理' },
         { value: 'GPMS', name: 'GPMS' },
-        { value: 'PRPS', name: '项目采购系统' },
+        { value: 'PRPS', name: 'PRPS' },
         { value: 'Gantt', name: 'Gantt' },
     ],
     allowCustomScopes: true,
