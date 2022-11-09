@@ -1,7 +1,7 @@
 // cz.config.js
 /** @type {import('cz-git').CommitizenGitOptions} */
 module.exports = {
-    alias: { fd: 'docs: fix typos   XXXXX' },
+    alias: { fd: 'docs: fix typos   XXXX' },
     messages: {
         type: 'Select the type of change that you\'re committing:',
         scope: ['Denote the SCOPE of this change (optional):'],
@@ -15,17 +15,27 @@ module.exports = {
         confirmCommit: 'Are you sure you want to proceed with the commit above?'
     },
     types: [
-        { value: "feat", name: "feat:     ✨  A new feature", emoji: ":sparkles:" },
-        { value: "fix", name: "fix:      🐛  A bug fix", emoji: ":bug:" },
-        { value: "docs", name: "docs:     📝  Documentation only changes", emoji: ":memo:" },
-        { value: "style", name: "style:    💄  Changes that do not affect the meaning of the code", emoji: ":lipstick:" },
-        { value: "refactor", name: "refactor: ♻️   A code change that neither fixes a bug nor adds a feature", emoji: ":recycle:" },
-        { value: "perf", name: "perf:     ⚡️  A code change that improves performance", emoji: ":zap:" },
-        { value: "test", name: "test:     ✅  Adding missing tests or correcting existing tests", emoji: ":white_check_mark:" },
-        { value: "build", name: "build:    📦️   Changes that affect the build system or external dependencies", emoji: ":package:" },
-        { value: "ci", name: "ci:       🎡  Changes to our CI configuration files and scripts", emoji: ":ferris_wheel:" },
-        { value: "chore", name: "chore:    🔨  Other changes that don't modify src or test files", emoji: ":hammer:" },
-        { value: "revert", name: "revert:   ⏪️  Reverts a previous commit", emoji: ":rewind:" }
+        { value: "[feat]", name: "✨ （功能版本更新） A new feature", emoji: ":sparkles:" },
+        { value: "[fix]", name: "🐛 （bug修复） A bug fix", emoji: ":bug:" },
+        { value: "[hotfix]", name: "🐛 （补丁修复）A bug fix", emoji: ":bug:" },
+        { value: "[style]", name: "💄 （样式调整）Style changes", emoji: ":lipstick:" },
+        { value: "[perf]", name: "⚡️（性能优化）Improves performance", emoji: ":zap:" },
+        { value: "[revert]", name: "⏪️（版本回滚）Reverts a previous commit ", emoji: ":rewind:" },
+        { value: "[docs]", name: "📝 （文档更新）Documentation changes ", emoji: ":memo:" },
+        { value: "[refactor]", name: "♻️（重构）refactor", emoji: ":recycle:" },
+        { value: "[other]", name: "📝 （其他）other changes ", emoji: ":rewind:" },
+
+        // { value: "feat", name: "feat:     ✨  A new feature", emoji: ":sparkles:" },
+        // { value: "fix", name: "fix:      🐛  A bug fix", emoji: ":bug:" },
+        // { value: "docs", name: "docs:     📝  Documentation only changes", emoji: ":memo:" },
+        // { value: "style", name: "style:    💄  Changes that do not affect the meaning of the code", emoji: ":lipstick:" },
+        // { value: "refactor", name: "refactor: ♻️   A code change that neither fixes a bug nor adds a feature", emoji: ":recycle:" },
+        // { value: "perf", name: "perf:     ⚡️  A code change that improves performance", emoji: ":zap:" },
+        // { value: "test", name: "test:     ✅  Adding missing tests or correcting existing tests", emoji: ":white_check_mark:" },
+        // { value: "build", name: "build:    📦️   Changes that affect the build system or external dependencies", emoji: ":package:" },
+        // { value: "ci", name: "ci:       🎡  Changes to our CI configuration files and scripts", emoji: ":ferris_wheel:" },
+        // { value: "chore", name: "chore:    🔨  Other changes that don't modify src or test files", emoji: ":hammer:" },
+        // { value: "revert", name: "revert:   ⏪️  Reverts a previous commit", emoji: ":rewind:" }
     ],
     useEmoji: true,
     emojiAlign: "center",
@@ -40,6 +50,7 @@ module.exports = {
         { value: 'GPMS', name: 'GPMS' },
         { value: 'PRPS', name: 'PRPS' },
         { value: 'Gantt', name: 'Gantt' },
+        { value: 'Workflow', name: 'Workflow' },
     ],
     allowCustomScopes: true,
     allowEmptyScopes: true,
