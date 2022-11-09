@@ -1,7 +1,7 @@
 // cz.config.js
 /** @type {import('cz-git').CommitizenGitOptions} */
 module.exports = {
-    alias: { fd: 'docs: fix typos   XXXX' },
+    alias: { fd: 'docs: fix typos   XXXXX' },
     messages: {
         type: 'Select the type of change that you\'re committing:',
         scope: ['Denote the SCOPE of this change (optional):'],
